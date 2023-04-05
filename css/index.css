@@ -1,0 +1,261 @@
+* {
+    font-family: 'PT Mono';
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(252, 202, 209);
+}
+
+header nav {
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
+}
+
+header nav span {
+    padding: 10px;
+}
+
+header nav .links {
+    color: #000;
+    text-decoration: none;
+    margin-top: 0.4rem
+}
+
+header nav .links:hover {
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    justify-content: end;
+}
+
+header nav .container-fluid {
+    width: 30em;
+}
+
+header nav .container-fluid form button img {
+    width: 1.5em;
+    height: 1.5em;
+}
+button {
+    background-color: rgb(252, 202, 209);
+
+}
+
+header .btn {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+header .btn:hover {
+    color: #fff
+}
+
+header .dropdown .dropdown-menu {
+    background-color: rgb(252, 202, 209);
+}
+
+header .dropdown .dropdown-menu .dropdown-item {
+    background-color: rgb(252, 202, 209);
+}
+
+header .dropdown .dropdown-menu .dropdown-item:hover {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main section .buttons {
+    margin: 20px;
+
+}
+main .add-phone{
+    display: none
+} 
+
+main section .buttons button {
+    margin: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5%;
+    font-size: 1rem;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+
+}
+
+main section .buttons button a {
+    text-decoration: none;
+    color: #000;
+}
+
+main section .buttons button:hover {
+    box-shadow: 0px 15px 20px rgba(132, 132, 132, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+main section .buttons button:hover a{
+    
+    color: #fff;
+}
+main aside table {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    margin: 2em;
+}
+
+main aside table th {
+    border: 1px solid black;
+    padding: 10px
+}
+
+main aside table tr td {
+    border: 1px solid black;
+    padding-left: 5px;
+    padding: 1em
+}
+
+main aside table tr td img {
+    width: 7em;
+    height: 8em;
+    margin: 0.7em
+}
+
+main aside table tr .observaciones {
+    max-width: 5rem;
+    max-height: 3rem;
+}
+
+main aside table tr .edit {
+    border: none
+}
+main aside table tr .edit a img{
+    width: 2em;
+    height: 2em;
+}
+main section .buttons button img{
+    width: 2em;
+    height: 2em;
+}
+
+footer {
+    margin-top: 2rem;
+    height: auto;
+    background-color: rgb(255, 185, 196);
+}
+
+footer .footer-content {
+    background-color: rgb(255, 185, 196);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2em;
+}
+
+footer .footer-content h3 {
+    background-color: rgb(255, 185, 196);
+
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 185, 196);
+
+}
+
+.socials li {
+    margin: 0 10px;
+    background-color: rgb(255, 185, 196);
+
+}
+
+.socials a {
+    text-decoration: none;
+    color: #000;
+    background-color: rgb(255, 185, 196);
+
+}
+
+.socials li a img {
+    width: 2em;
+    height: 2em;
+    background-color: rgb(255, 185, 196);
+
+}
+
+footer .footer-content .socials li a:hover {
+    font-size: 1.2rem;
+
+}
+footer .footer-content p img{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+@media (max-width: 45em) {
+
+    /* 720px*/
+    main .add-phone{
+        display: block
+    } 
+    main{
+        display: block;
+    }
+
+    aside table {
+        width: 70%;
+
+    }
+    aside table tr {
+        display: flex;
+        flex-direction: column;
+    }
+main aside table tr td{
+    width: 100%;
+}
+    table th {
+        display: none
+    }
+}
+
+@media (min-width: 45.06em) { /*721*/
+    body{
+        position: absolute;
+    }
+    main {
+        display:block
+    }
+    main .add-phone{
+        display: block
+    } 
+    aside {
+        margin-left: 1rem;
+    }
+    footer{
+        position:fixed;                
+       left: 0px;
+       bottom: 0px;
+       width: 100%;
+    }
+}
+@media (min-width: 56em){
+    footer{
+        position: relative
+    }
+}
