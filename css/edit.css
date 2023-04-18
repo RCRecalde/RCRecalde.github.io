@@ -101,12 +101,14 @@ main aside table {
 }
 
 main aside table th {
-    border: 1px solid black;
+       border: 3px solid rgb(208, 143, 217);
+
     padding: 10px
 }
 
 main aside table tr td {
-    border: 1px solid black;
+       border: 3px solid rgb(208, 143, 217);
+
     padding-left: 5px;
     padding: 1em
 }

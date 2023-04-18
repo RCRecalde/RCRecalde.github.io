@@ -93,7 +93,6 @@ main section .buttons button {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-
 }
 
 main section .buttons button a {
@@ -107,7 +106,6 @@ main section .buttons button:hover {
     transform: translateY(-7px);
 }
 main section .buttons button:hover a{
-    
     color: #fff;
 }
 main aside table {
@@ -116,12 +114,12 @@ main aside table {
 }
 
 main aside table th {
-    border: 1px solid black;
-    padding: 10px
+    border: 3px solid rgb(208, 143, 217);
+    padding: 10px;
 }
 
 main aside table tr td {
-    border: 1px solid black;
+    border: 3px solid  rgb(208, 143, 217);
     padding-left: 5px;
     padding: 1em
 }
@@ -130,11 +128,6 @@ main aside table tr td img {
     width: 7em;
     height: 8em;
     margin: 0.7em
-}
-
-main aside table tr .observaciones {
-    max-width: 5rem;
-    max-height: 3rem;
 }
 
 main aside table tr .edit {
