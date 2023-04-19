@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(252, 202, 209);
+background-color: rgb(252, 202, 209);
     margin: 0;
 }
 
@@ -101,14 +101,13 @@ main aside table {
 }
 
 main aside table th {
-       border: 3px solid rgb(208, 143, 217);
-
+    border: 2px solid  rgb(95, 57, 111);
     padding: 10px
 }
 
 main aside table tr td {
-       border: 3px solid rgb(208, 143, 217);
-
+    border: 2px solid  rgb(95, 57, 111);
+    
     padding-left: 5px;
     padding: 1em
 }
