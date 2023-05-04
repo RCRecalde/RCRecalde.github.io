@@ -1,145 +1,98 @@
-* {
-    font-family: 'PT Mono';
+*{
     box-sizing: border-box;
+    font-family: 'PT Mono';
 }
-
 body {
-    background-color: rgb(252, 202, 209);
+	font-family: 'Open Sans', sans-serif;
+    background: rgb(255,230,241);
+    background: linear-gradient(176deg, rgba(255,230,241,1) 0%, rgba(255,66,149,1) 85%);
+	background-repeat: no-repeat;
+}
+header .nav-item{
+	margin: 0.5rem
+}
+main .intro{
+	margin: 2rem;
+	text-align:center
+}
+div h3{
+	font-family: 'Figtree';
+	font-weight: bold;
+}
+div h4{
+	font-family: 'Raleway';
+	font-size: 1em;
+}
+.login { 
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	margin: -150px 0 0 -150px;
+	width:300px;
+	height:300px;
+}
+.login h2 { 
+    color: #fff; 
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); 
+    letter-spacing:1px; 
+    text-align:center; 
 }
 
-header nav {
-    display: flex;
-    justify-content: end;
-    padding: 1rem;
+
+input { 
+	width: 100%; 
+	margin-bottom: 10px; 
+	background: rgba(0,0,0,0.3);
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+}
+input:focus { 
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); 
 }
 
-header nav span {
-    padding: 10px;
+main .login form .forgot a{
+	font-size: 0.9rem;
+	margin-left: 5rem;
+	color: rgba(255,66,149,1);
+}
+main .login form button{
+background-color: rgba(255,66,149,1);
+border: none;
+}
+main .login form button:hover{
+background-color: pink;
 }
 
-header nav .links {
-    color: #000;
-    text-decoration: none;
-    margin-top: 0.4rem
+main .login div{
+	font-size: 1rem;
+	padding: 10px;
+}
+main .login div a{
+	color: rgba(255,66,149,1);;
 }
 
-header nav .links:hover {
-    color: #fff;
+main .yo{
+	margin-top: 40%;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	
 }
 
-header nav ul {
-    list-style: none;
-    justify-content: end;
+main .yo .caja-foto{
+	display: flex;
 }
 
-header nav .container-fluid {
-    width: 30em;
+main .yo .caja-foto img{
+	max-width: 35rem;
+	max-height: 35rem;
 }
-
-header nav .container-fluid form button img {
-    width: 1.5em;
-    height: 1.5em;
-}
-button {
-    background-color: rgb(252, 202, 209);
-
-}
-
-header .btn {
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    font-size: 1rem;
-    cursor: pointer;
-    outline: none;
-}
-
-header .btn:hover {
-    color: #fff
-}
-
-header .dropdown .dropdown-menu {
-    background-color: rgb(252, 202, 209);
-}
-
-header .dropdown .dropdown-menu .dropdown-item {
-    background-color: rgb(252, 202, 209);
-}
-
-header .dropdown .dropdown-menu .dropdown-item:hover {
-    color: #fff;
-    font-size: 1.2rem;
-}
-
-main {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-main section .buttons {
-    margin: 20px;
-
-}
-main .add-phone{
-    display: none
-} 
-
-main section .buttons button {
-    margin: 20px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    text-transform: uppercase;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5%;
-    font-size: 1rem;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-}
-
-main section .buttons button a {
-    text-decoration: none;
-    color: #000;
-}
-
-main section .buttons button:hover {
-    box-shadow: 0px 15px 20px rgba(132, 132, 132, 0.4);
-    color: #fff;
-    transform: translateY(-7px);
-}
-main section .buttons button:hover a{
-    color: #fff;
-}
-main aside table {
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    margin: 2em;
-}
-
-main aside table th {
-    border: 2px solid rgb(95, 57, 111);
-    padding: 10px;
-}
-
-main aside table tr td {
-    border: 2px solid  rgb(95, 57, 111);
-    padding-left: 5px;
-    padding: 1em
-}
-
-main aside table tr td img {
-    width: 7em;
-    height: 8em;
-    margin: 0.7em
-}
-
-main aside table tr .edit {
-    border: none
-}
-main aside table tr .edit a img{
-    width: 2em;
-    height: 2em;
-}
-main section .buttons button img{
-    width: 2em;
-    height: 2em;
+main .yo .caja-foto p{
+	margin-top: 6rem;
 }
 
 footer {
@@ -199,56 +152,4 @@ footer .footer-content .socials li a:hover {
 footer .footer-content p img{
     width: 1.5em;
     height: 1.5em;
-}
-
-@media (max-width: 45em) {
-
-    /* 720px*/
-    main .add-phone{
-        display: block
-    } 
-    main{
-        display: block;
-    }
-
-    aside table {
-        width: 70%;
-
-    }
-    aside table tr {
-        display: flex;
-        flex-direction: column;
-    }
-main aside table tr td{
-    width: 100%;
-}
-    table th {
-        display: none
-    }
-}
-
-@media (min-width: 45.06em) { /*721*/
-    body{
-        position: absolute;
-    }
-    main {
-        display:block
-    }
-    main .add-phone{
-        display: block
-    } 
-    aside {
-        margin-left: 1rem;
-    }
-    footer{
-        position:fixed;                
-       left: 0px;
-       bottom: 0px;
-       width: 100%;
-    }
-}
-@media (min-width: 56em){
-    footer{
-        position: relative
-    }
 }

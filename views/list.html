@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,15 +20,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/edit.css">
-    <title>Editar cliente</title>
+    <link rel="stylesheet" href="../css/list.css">
+
+    <title>Agenda</title>
 </head>
 
 <body>
     <header>
         <nav>
+
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar cliente" aria-label="Search">
+                    <button class="btn" type="submit"><img src="https://img.icons8.com/dusk/64/null/search--v1.png"/></button>
+                </form>
+            </div>
+
             <a href="" class="links"><span>Sobre la Página</span></a>
             <div class="dropdown">
+
                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     ¡Hola!
                 </button>
@@ -45,49 +54,55 @@
 
     </header>
     <main>
-        <aside>
-            <form action="" method="post">
-
-
-                <table>
-                    <tr>
-                        <th></th>
-                        <th><label for="">Nombre</label></th>
-                        <th><label for="">Edad</label></th>
-                        <th><label for="">Tutor</label></th>
-                        <th><label for="">Teléfono</label></th>
-                        <th><label for="">Alergias</label></th>
-                        <th><label for="">Observaciones</label></th>
-                        <th><label for="">Última Visita</label></th>
-
-                    </tr>
-                    <tr>
-                        <td><p>Nombre</p><input class="file" type="file" name="image"></td>
-                        <td><p>Edad</p><input type="text" name="name" placeholder="Nombre" value=""></td>
-                        <td><p>Edad</p><input type="text" name="edad" placeholder="Edad"></td>
-                        <td><p>Tutor</p><input type="text" name="tutor" placeholder="Tutor"></td>
-                        <td><p>Teléfono</p><input type="text" name="phone" placeholder="Teléfono"></td>
-                        <td><p>Alergias</p><select name="alergias" id="" placeholder="Alergias">
-                            <option value="no">No</option>
-                            <option value="si">Sí</option>
-                        </select></td>
-                        <td><input type="text" name="observaciones" placeholder="Observaciones"></td>
-                        <td><p>Última Visita</p><input type="date" name="lastVisit"></td>
-                        
-                    </tr>
-
-                </table>
-            </form>
-        </aside>
-
-        <section>
+        <section class="add-phone">
             <div class="buttons">
-                <form action="list.html" method="post">
-                <button><img src="https://img.icons8.com/dusk/64/null/save--v1.png"/><span>Guardar cliente</span></button>
-                </form>
+                <button><img src="https://img.icons8.com/dusk/64/null/dog.png"/><a href="./add.html"><span>Agregar cliente</span></a></button>
             </div>
 
         </section>
+        <aside>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Tutor</th>
+                    <th>Teléfono</th>
+                    <th>Alergias</th>
+                    <th>Observaciones</th>
+                    <th>Última Visita</th>
+                </tr>
+                <tr>
+                    <td><img src="../img/indio.jpg" alt=""></td>
+                    <td>Indio</td>
+                    <td>5 años</td>
+                    <td>Alicia</td>
+                    <td>1112345678</td>
+                    <td>No es alérgico</td>
+                    <td class="observaciones"> - </td>
+                    <td>04/04/2023</td>
+                    <td class="edit"> <a href="edit.html" style="color: black;"><img src="https://img.icons8.com/dusk/64/null/edit-file.png"/></a> </td>
+
+                </tr>
+                <tr>
+                    <td><img src="../img/peny.jpg" alt=""></td>
+                    <td>Peny</td>
+                    <td>7 años</td>
+                    <td>Romina</td>
+                    <td>1112345678</td>
+                    <td>Alegias en la piel</td>
+                    <td class="">Shampoo jabón blanco, sensible y dermosedan. Sin perfume.
+                    </td>
+                    <td>07/02/2023</td>
+                    <td class="edit"> <a href="edit.html" style="color: black;"><img src="https://img.icons8.com/dusk/64/null/edit-file.png"/></a> </td>
+
+                </tr>
+
+
+            </table>
+        </aside>
+
+        
 
     </main>
 
@@ -105,7 +120,6 @@
         </div>
 
     </footer>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
         integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="

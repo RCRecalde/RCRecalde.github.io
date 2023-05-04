@@ -4,15 +4,13 @@
 }
 
 body {
-background-color: rgb(252, 202, 209);
-    margin: 0;
+    background-color: rgb(252, 202, 209);
 }
 
 header nav {
     display: flex;
     justify-content: end;
     padding: 1rem;
-
 }
 
 header nav span {
@@ -38,6 +36,10 @@ header nav .container-fluid {
     width: 30em;
 }
 
+header nav .container-fluid form button img {
+    width: 1.5em;
+    height: 1.5em;
+}
 button {
     background-color: rgb(252, 202, 209);
 
@@ -74,7 +76,11 @@ main {
 
 main section .buttons {
     margin: 20px;
+
 }
+main .add-phone{
+    display: none
+} 
 
 main section .buttons button {
     margin: 20px;
@@ -89,56 +95,57 @@ main section .buttons button {
     outline: none;
 }
 
+main section .buttons button a {
+    text-decoration: none;
+    color: #000;
+}
+
 main section .buttons button:hover {
     box-shadow: 0px 15px 20px rgba(132, 132, 132, 0.4);
     color: #fff;
     transform: translateY(-7px);
 }
-
+main section .buttons button:hover a{
+    color: #fff;
+}
 main aside table {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    margin-left: 1em;
+    margin: 2em;
 }
 
 main aside table th {
-    border: 2px solid  rgb(95, 57, 111);
-    padding: 10px
+    border: 2px solid rgb(95, 57, 111);
+    padding: 10px;
 }
 
 main aside table tr td {
     border: 2px solid  rgb(95, 57, 111);
-    
     padding-left: 5px;
     padding: 1em
 }
 
-main aside table tr td .file {
-    width: 12em;
-    height: 3em;
+main aside table tr td img {
+    width: 7em;
+    height: 8em;
+    margin: 0.7em
 }
 
-main aside table tr td input {
-    width: 5em;
-    height: 3em;
+main aside table tr .edit {
+    border: none
 }
-
-main aside table tr td p {
-    display: none
+main aside table tr .edit a img{
+    width: 2em;
+    height: 2em;
 }
-
-main section .buttons form button img {
-    width: 35px;
-    height: 35px;
-    margin-right: 10px;
+main section .buttons button img{
+    width: 2em;
+    height: 2em;
 }
 
 footer {
     margin-top: 2rem;
     height: auto;
     background-color: rgb(255, 185, 196);
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
 }
 
 footer .footer-content {
@@ -189,18 +196,18 @@ footer .footer-content .socials li a:hover {
     font-size: 1.2rem;
 
 }
-
-footer .footer-content p img {
+footer .footer-content p img{
     width: 1.5em;
     height: 1.5em;
 }
 
 @media (max-width: 45em) {
-    main .btn-phone {
-        display: block
-    }
 
-    main {
+    /* 720px*/
+    main .add-phone{
+        display: block
+    } 
+    main{
         display: block;
     }
 
@@ -208,56 +215,40 @@ footer .footer-content p img {
         width: 70%;
 
     }
-
     aside table tr {
         display: flex;
         flex-direction: column;
     }
-
-    main aside table tr td {
-        width: 100%;
-    }
-
-    main aside table tr td p {
-        display: block;
-        font-weight: bold;
-    }
-
+main aside table tr td{
+    width: 100%;
+}
     table th {
         display: none
     }
-
-    footer {
-        position: relative;
-    }
 }
 
-@media (min-width: 45.06em) {
-    body {
+@media (min-width: 45.06em) { /*721*/
+    body{
         position: absolute;
     }
-
     main {
+        display:block
+    }
+    main .add-phone{
         display: block
+    } 
+    aside {
+        margin-left: 1rem;
     }
-
-    main aside table {
-        margin-left: 1em;
-        margin-right: 1em;
-
-    }
-
-    footer {
-        position: fixed;
-        left: 0px;
-        bottom: 0px;
-        width: 100%;
+    footer{
+        position:fixed;                
+       left: 0px;
+       bottom: 0px;
+       width: 100%;
     }
 }
-
-@media (min-width: 75em){
-    /*1200*/
-    main{
-        display: flex
+@media (min-width: 56em){
+    footer{
+        position: relative
     }
 }
