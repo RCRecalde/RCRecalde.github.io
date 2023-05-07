@@ -1,155 +1,200 @@
-*{
-    box-sizing: border-box;
-    font-family: 'PT Mono';
+* {
+	box-sizing: border-box;
+	font-family: 'PT Mono';
 }
+
 body {
 	font-family: 'Open Sans', sans-serif;
-    background: rgb(255,230,241);
-    background: linear-gradient(176deg, rgba(255,230,241,1) 0%, rgba(255,66,149,1) 85%);
+	background: rgb(255, 230, 241);
+	background: linear-gradient(176deg, rgba(255, 230, 241, 1) 0%, rgba(255, 66, 149, 1) 85%);
 	background-repeat: no-repeat;
 }
-header .nav-item{
+
+header .nav-item {
 	margin: 0.5rem
 }
-main .intro{
+
+main .intro {
 	margin: 2rem;
-	text-align:center
+	text-align: center
 }
-div h3{
+
+div h3 {
 	font-family: 'Figtree';
 	font-weight: bold;
 }
-div h4{
+
+div h4 {
 	font-family: 'Raleway';
 	font-size: 1em;
 }
-.login { 
+
+.login {
 	position: absolute;
 	top: 60%;
 	left: 50%;
 	margin: -150px 0 0 -150px;
-	width:300px;
-	height:300px;
+	width: 300px;
+	height: 300px;
 }
-.login h2 { 
-    color: #fff; 
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); 
-    letter-spacing:1px; 
-    text-align:center; 
+
+.login h2 {
+	color: #fff;
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+	letter-spacing: 1px;
+	text-align: center;
 }
 
 
-input { 
-	width: 100%; 
-	margin-bottom: 10px; 
-	background: rgba(0,0,0,0.3);
+input {
+	width: 100%;
+	margin-bottom: 10px;
+	background: rgba(0, 0, 0, 0.3);
 	outline: none;
 	padding: 10px;
 	font-size: 13px;
 	color: #fff;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-	border: 1px solid rgba(0,0,0,0.3);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(0, 0, 0, 0.3);
 	border-radius: 4px;
 }
-input:focus { 
-	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); 
+
+input:focus {
+	box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px rgba(255, 255, 255, 0.2);
 }
 
-main .login form .forgot a{
+main .login form .forgot a {
 	font-size: 0.9rem;
 	margin-left: 5rem;
-	color: rgba(255,66,149,1);
-}
-main .login form button{
-background-color: rgba(255,66,149,1);
-border: none;
-}
-main .login form button:hover{
-background-color: pink;
+	color: rgba(255, 66, 149, 1);
 }
 
-main .login div{
+main .login form button {
+	background-color: rgba(255, 66, 149, 1);
+	border: none;
+}
+
+main .login form button:hover {
+	background-color: pink;
+}
+
+main .login div {
 	font-size: 1rem;
 	padding: 10px;
 }
-main .login div a{
-	color: rgba(255,66,149,1);;
+
+main .login div a {
+	color: rgba(255, 66, 149, 1);
 }
 
-main .yo{
+main .yo {
 	margin-top: 40%;
 	margin-left: 2rem;
 	margin-right: 2rem;
-	
 }
 
-main .yo .caja-foto{
+main .yo .caja-foto {
 	display: flex;
 }
 
-main .yo .caja-foto img{
+main .yo .caja-foto img {
 	max-width: 35rem;
 	max-height: 35rem;
 }
-main .yo .caja-foto p{
+
+main .yo .caja-foto p {
 	margin-top: 6rem;
 }
 
 footer {
-    margin-top: 2rem;
-    height: auto;
-    background-color: rgb(255, 185, 196);
+	margin-top: 2rem;
+	height: auto;
+	background-color: rgb(255, 185, 196);
 }
 
 footer .footer-content {
-    background-color: rgb(255, 185, 196);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 2em;
+	background-color: rgb(255, 185, 196);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	padding-top: 2em;
 }
 
 footer .footer-content h3 {
-    background-color: rgb(255, 185, 196);
+	background-color: rgb(255, 185, 196);
 
 }
 
 .socials {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(255, 185, 196);
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(255, 185, 196);
 
 }
 
 .socials li {
-    margin: 0 10px;
-    background-color: rgb(255, 185, 196);
+	margin: 0 10px;
+	background-color: rgb(255, 185, 196);
 
 }
 
 .socials a {
-    text-decoration: none;
-    color: #000;
-    background-color: rgb(255, 185, 196);
+	text-decoration: none;
+	color: #000;
+	background-color: rgb(255, 185, 196);
 
 }
 
 .socials li a img {
-    width: 2em;
-    height: 2em;
-    background-color: rgb(255, 185, 196);
+	width: 2em;
+	height: 2em;
+	background-color: rgb(255, 185, 196);
 
 }
 
 footer .footer-content .socials li a:hover {
-    font-size: 1.2rem;
+	font-size: 1.2rem;
 
 }
-footer .footer-content p img{
-    width: 1.5em;
-    height: 1.5em;
+
+footer .footer-content p img {
+	width: 1.5em;
+	height: 1.5em;
+}
+
+@media (max-width: 45em) {
+
+	/* 720px*/
+
+	main .yo .caja-foto {
+		display: block;
+	}
+
+	main .yo .caja-foto img {
+		width: 110%;
+		margin-top: 10rem;
+		
+	}
+	main .yo .caja-foto p {
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 45.06em) and (max-width: 57.5em)  /*721 to 920*/ {
+	main .yo .caja-foto {
+		display: block;
+	}
+
+	main .yo .caja-foto img {
+		width: 110%;
+	}
+	main .yo .caja-foto p {
+		margin-top: 0;
+	}
+
+
 }
