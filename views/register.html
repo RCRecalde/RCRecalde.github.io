@@ -26,7 +26,7 @@
 
   <title>Programando Perritos</title>
 </head>
-<body>
+<body onLoad="iniciar()">
     <header>
         <ul class="nav justify-content-center">
             <li class="nav-item">
@@ -41,6 +41,15 @@
                 <a class="nav-item" style="color: #000; text-decoration: none;" href="#contacto">Sobre la Página</a>
 
             </li>
+            <li>
+                <div id="timedate">
+                            <a id="mes">January</a>
+                            <a id="d">1</a>,
+                            <a id="a">0</a><br />
+                            <a id="h">12</a> :
+                            <a id="m">00</a>
+                        </div>
+                </li>
           </ul>
     </header>
     <main>
@@ -79,6 +88,7 @@
         </div>
 
     </footer>
+    <script src="../javascript/animacion.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

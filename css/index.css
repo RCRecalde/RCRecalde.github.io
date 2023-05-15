@@ -10,6 +10,16 @@ body {
 	background-repeat: no-repeat;
 }
 
+#timedate {
+	font: small-caps lighter 1rem "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	text-align:left;
+	color: #000;
+	border-left: 3px solid rgba(255, 66, 149);
+	padding: 20px;
+  }
+header{
+	margin-left: 11rem;
+}
 header .nav-item {
 	margin: 0.5rem
 }
@@ -216,6 +226,12 @@ footer .footer-content p img {
 @media (max-width: 45em) {
 
 	/* 720px*/
+	header{
+		margin-left: 0;
+	}
+	.login{
+		margin-top: 10px;
+	}
 	header .nav-item img{
 		max-width: 3rem;
 		max-height: 3rem;

@@ -7,7 +7,14 @@ body {
     background-color: rgb(252, 202, 209);
     margin: 0;
 }
-
+header #timedate {
+	font: small-caps lighter 1rem "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	text-align:left;
+	color: #000;
+	border-left: 3px solid rgba(255, 66, 149);
+	padding: 20px;
+    margin-left: 1rem;
+  }
 header nav {
     display: flex;
     justify-content: end;
