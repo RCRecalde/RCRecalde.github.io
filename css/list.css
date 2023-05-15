@@ -5,6 +5,7 @@
 
 body {
     background-color: rgb(252, 202, 209);
+    margin: 0;
 }
 
 header nav {
@@ -201,9 +202,7 @@ footer .footer-content p img{
     height: 1.5em;
 }
 
-@media (max-width: 45em) {
-
-    /* 720px*/
+@media (max-width: 45em) { /* 720px*/
     main .add-phone{
         display: block
     } 
@@ -228,6 +227,7 @@ main aside table tr td{
 }
 
 @media (min-width: 45.06em) { /*721*/
+
     body{
         position: absolute;
     }
@@ -241,7 +241,7 @@ main aside table tr td{
         margin-left: 1rem;
     }
     footer{
-        position:fixed;                
+        
        left: 0px;
        bottom: 0px;
        width: 100%;

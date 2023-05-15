@@ -22,6 +22,7 @@
     <link
     href="https://fonts.googleapis.com/css2?family=Figtree&family=Josefin+Sans:ital,wght@1,500&family=Press+Start+2P&family=Raleway:ital,wght@1,300&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Programando Perritos</title>
 </head>
 <body>
@@ -32,9 +33,9 @@
                 
             </li>
             <li class="nav-item">
-                <span class="nav-item" style="color: #000">LOGO</span>
-
-            </li>
+                <!-- <span class="nav-item" style="color: #000">LOGO</span>-->
+                 <img src="./img/logo2.png" alt="">
+             </li>
             <li class="nav-item">
                 <a class="nav-item" style="color: #000; text-decoration: none;" href="#contacto">Sobre la Página</a>
 
@@ -43,10 +44,10 @@
     </header>
     <main>
         <div class="intro">
-            <h3>Programando Perritos</h3>
+            <h3 onmouseout="tiping()" >Programando Perritos</h3>
             <h4>Administrá tu peluquería de la mejor manera</h4>
         </div>
-        <div class="login">
+        <div data-aos="zoom-in-up" data-aos-duration="2000" class="login">
             <h2>Iniciar Sesión</h2>
             <form method="" action="./views/list.html">
                 <input type="text" name="user" placeholder="Nombre de usuario" required="required" />
@@ -57,7 +58,7 @@
             <div>¿Todavía no tenés tu cuenta? <a href="./views/register.html">Regístrate!</a></div>
         </div>
         <section class="yo">
-            <div class="caja-foto">
+        <div data-aos="fade-up" data-aos-duration="3000" class="caja-foto">
                 <img src="./img/yo.png" alt="">
            
                 <p id="sobremi">Hola! Mi nombre es Rocío y creé este servicio web para combinar mis dos pasiones: la programación y la peluquería canina. "Programando Perritos" es un servicio donde vas a poder organizar tu pelu de manera que puedas ver las especificaciones de cada cliente, desde el nombre hasta la última vez que visitó tu peluquería. <br>
@@ -82,5 +83,10 @@
         </div>
 
     </footer>
+    <script src="./javascript/animacion.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

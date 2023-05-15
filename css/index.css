@@ -14,6 +14,11 @@ header .nav-item {
 	margin: 0.5rem
 }
 
+header .nav-item img {
+	max-width: 6rem;
+	max-height: 6rem;
+}
+
 main .intro {
 	margin: 2rem;
 	text-align: center
@@ -22,6 +27,48 @@ main .intro {
 div h3 {
 	font-family: 'Figtree';
 	font-weight: bold;
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+
+div h3.tiping {
+	margin-left: 36%;
+	border-right: solid 3px rgba(0, 0, 0, 0.75);
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 28px;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+/* Animacion */
+div h3.tiping {
+	animation: animated-text 4s steps(25, end) 1s 1 normal both,
+		animated-cursor 600ms steps(20, end) infinite;
+}
+
+/* texto */
+
+@keyframes animated-text {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 330px;
+	}
+}
+
+/* cursor */
+
+@keyframes animated-cursor {
+	from {
+		border-right-color: rgba(0, 0, 0, 0.75);
+	}
+
+	to {
+		border-right-color: transparent;
+	}
 }
 
 div h4 {
@@ -36,6 +83,7 @@ div h4 {
 	margin: -150px 0 0 -150px;
 	width: 300px;
 	height: 300px;
+
 }
 
 .login h2 {
@@ -43,6 +91,7 @@ div h4 {
 	text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 	letter-spacing: 1px;
 	text-align: center;
+	margin-top: 30px
 }
 
 
@@ -169,6 +218,10 @@ footer .footer-content p img {
 @media (max-width: 45em) {
 
 	/* 720px*/
+	header .nav-item img {
+		max-width: 3rem;
+		max-height: 3rem;
+	}
 
 	main .yo .caja-foto {
 		display: block;
@@ -177,14 +230,28 @@ footer .footer-content p img {
 	main .yo .caja-foto img {
 		width: 110%;
 		margin-top: 17rem;
-		
+
 	}
+
 	main .yo .caja-foto p {
 		margin-top: 0;
 	}
+
 }
 
-@media (min-width: 45.06em) and (max-width: 57.5em)  /*721 to 920*/ {
+@media (min-width: 45.06em) and (max-width: 56em)
+
+/*721 to 920*/
+	{
+	header .nav-item img {
+		max-width: 5rem;
+		max-height: 5rem;
+	}
+
+	main .login h2 {
+		margin-top: 10%;
+	}
+
 	main .yo .caja-foto {
 		display: block;
 	}
@@ -192,6 +259,7 @@ footer .footer-content p img {
 	main .yo .caja-foto img {
 		width: 110%;
 	}
+
 	main .yo .caja-foto p {
 		margin-top: 0;
 	}
